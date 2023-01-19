@@ -8,6 +8,7 @@ use App\Http\Requests\StoreProjectRequest;
 use App\Http\Requests\UpdateProjectRequest;
 use App\Models\Technology;
 use App\Models\Type;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 
 class ProjectController extends Controller
@@ -19,7 +20,8 @@ class ProjectController extends Controller
      */
     public function index()
     {
-        $projects = Project::orderByDesc('id')->get();
+        //$projects = Project::orderByDesc('id')->get();
+        $projects=Project::orderByDesc('id')->paginate(8);
         $types = Type::all();
         return view('admin.projects.index', compact('projects', 'types'));
     }

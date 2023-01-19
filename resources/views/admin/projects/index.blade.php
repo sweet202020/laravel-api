@@ -141,6 +141,10 @@
 
                     </tfoot>
                 </table>
+                <div>
+
+                    {{ $projects->links('vendor.pagination.bootstrap-5') }}
+                </div>
             </div>
 
         </div>
