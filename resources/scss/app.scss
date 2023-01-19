@@ -1,0 +1,74 @@
+@import '~bootstrap/scss/bootstrap';
+
+body {
+    background-image: url('../../public/img/wall.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Kanit', sans-serif;
+    min-height: 1000px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ul {
+    li {
+
+
+        a.nav-link {
+            font-size: 30px;
+            text-transform: uppercase;
+            color: rgb(228, 212, 212);
+            margin-left: 3rem;
+        }
+    }
+}
+
+.dropdown-menu {
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: none;
+
+    .dropdown-item {
+        color: rgb(189, 170, 170);
+        font-size: 20px;
+
+    }
+}
+
+h1 {
+    font-weight: bold;
+    font-size: 100px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+}
+
+.title {
+
+    img {
+        filter: invert(1);
+        margin-left: 3rem;
+    }
+}
+
+.just-me {
+    background-color: #f5eee638;
+    width: 420px;
+    padding: 2rem;
+    margin-bottom: 5rem;
+    border: 2px solid white;
+    border-radius: 1rem;
+
+    p {
+        font-size: 40px;
+        font-weight: 600;
+    }
+}
