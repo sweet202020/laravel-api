@@ -22,8 +22,7 @@ class ProjectController extends Controller
     {
         //$projects = Project::orderByDesc('id')->get();
         $projects=Project::orderByDesc('id')->paginate(8);
-        $types = Type::all();
-        return view('admin.projects.index', compact('projects', 'types'));
+        return view('admin.projects.index', compact('projects'));
     }
 
     /**

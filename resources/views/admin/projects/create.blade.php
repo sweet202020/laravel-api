@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('content')
     <h2 class="text-center text-uppercase mt-3">add project</h2>
+    @include('partials.error')
     <form action="{{ route('admin.projects.store') }}" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="container">
