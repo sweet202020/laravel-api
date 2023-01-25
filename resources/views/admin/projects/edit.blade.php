@@ -30,6 +30,11 @@
 
             </div>
             <div class="mb-3">
+                <label for="site_link" class="form-label">site_link</label>
+                <input type="text" class="form-control" name="site_link" id="site_link" aria-describedby="helpId"
+                    value="{{ $project->site_link }}" placeholder="link al github o al sito online">
+            </div>
+            <div class="mb-3">
                 <label for="difficulty" class="form-label">difficulty</label>
                 <input type="text" name="difficulty" id="difficulty"
                     class="form-control @error('difficulty') is-invalid @enderror" placeholder="batman vol-2 (joker)"

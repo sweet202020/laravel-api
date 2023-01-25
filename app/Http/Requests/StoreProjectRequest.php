@@ -29,6 +29,7 @@ class StoreProjectRequest extends FormRequest
             'difficulty' => 'required|max:30',
             'language' => 'required|max:50',
             'cover_image' => 'nullable|image|max:300',
+            'site_link'=>'nullable',
             'type_id' => 'nullable|exists:types,id',
             'technologies'=>'nullable|exists:technologies,id'
         ];

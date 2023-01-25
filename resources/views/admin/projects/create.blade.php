@@ -8,30 +8,34 @@
             <div class="mb-3">
                 <label for="title" class="form-label">title</label>
                 <input type="text" class="form-control" name="title" id="title" aria-describedby="helpId"
-                    placeholder="progetto 1">
+                    value="{{ old('title') }}" placeholder="progetto 1">
             </div>
             <div class="mb-3">
                 <label for="description" class="form-label">description</label>
                 <textarea placeholder="project's description here" class="form-control" name="description" id="description"
-                    cols="30" rows="10"></textarea>
+                    cols="30" rows="10">{{ old('description') }}</textarea>
 
             </div>
             <div class="mb-3">
                 <label for="cover_image" class="form-label">cover image</label>
                 <input type="file" name="cover_image" id="cover_image" class="form-control"
                     placeholder="add cover image " aria-describedby="helpId">
-
+            </div>
+            <div class="mb-3">
+                <label for="site_link" class="form-label">site_link</label>
+                <input type="text" class="form-control" name="site_link" id="site_link" aria-describedby="helpId"
+                    value="{{ old('site_link') }}" placeholder="link al github o al sito online">
             </div>
 
             <div class="mb-3">
                 <label for="difficulty" class="form-label">difficulty</label>
                 <input type="text" class="form-control" name="difficulty" id="difficulty" aria-describedby="helpId"
-                    placeholder="project's difficulty ">
+                    value="{{ old('difficulty') }}" placeholder="project's difficulty ">
             </div>
             <div class="mb-3">
                 <label for="language" class="form-label">language</label>
                 <input type="text" class="form-control" name="language" id="language" aria-describedby="helpId"
-                    placeholder="project's language">
+                    value="{{ old('language') }}" placeholder="project's language">
             </div>
             <div class="mb-3">
                 <label for="type_id" class="form-label">types</label>

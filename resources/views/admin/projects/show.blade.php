@@ -13,6 +13,9 @@
                         placeholder
                     </div>
                 @endif
+                <div class="link">
+                    {{ $project->site_link }}
+                </div>
                 <div class="meta">
                     <div class="difficulty">
                         difficulty: {{ $project->difficulty }}
