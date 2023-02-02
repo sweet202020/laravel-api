@@ -59,7 +59,7 @@ class ProjectController extends Controller
 
         if($request->has('technologies')){
             $project->technologies()->attach($val_data['technologies']);
-            } 
+            }  
 
 
         return to_route('admin.projects.index')->with('message', "$project->title added succesfully");

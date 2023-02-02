@@ -25,10 +25,10 @@ class StoreProjectRequest extends FormRequest
     {
         return [
             'title' => 'required|unique:projects,title|min:5|max:100',
-            'description' => 'required|max:300',
+            'description' => 'required|max:500',
             'difficulty' => 'required|max:30',
             'language' => 'required|max:50',
-            'cover_image' => 'nullable|image|max:300',
+            'cover_image' => 'nullable|image|max:10000',
             'site_link'=>'nullable',
             'type_id' => 'nullable|exists:types,id',
             'technologies'=>'nullable|exists:technologies,id'
